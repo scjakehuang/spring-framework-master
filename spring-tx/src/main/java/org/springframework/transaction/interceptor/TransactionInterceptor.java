@@ -109,6 +109,7 @@ public class TransactionInterceptor extends TransactionAspectSupport implements 
 
 		// Deserialize superclass fields.
 		oos.writeObject(getTransactionManagerBeanName());
+		System.out.println("");
 		oos.writeObject(getTransactionManager());
 		oos.writeObject(getTransactionAttributeSource());
 		oos.writeObject(getBeanFactory());
